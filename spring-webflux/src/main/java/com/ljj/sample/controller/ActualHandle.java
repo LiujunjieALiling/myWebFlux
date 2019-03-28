@@ -1,6 +1,8 @@
 package com.ljj.sample.controller;
 
 
+import static org.springframework.web.reactive.function.server.ServerResponse.ok;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -8,8 +10,6 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
-
-import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
 import reactor.core.publisher.Mono;
 
