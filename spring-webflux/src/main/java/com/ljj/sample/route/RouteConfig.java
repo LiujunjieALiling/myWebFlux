@@ -22,7 +22,7 @@ public class RouteConfig {
 	@Bean
 	public  RouterFunction<ServerResponse> timeRouter(){
 		
-		return route(GET("/time"),request->actualHandle.time(request)).andRoute(GET("/date"), actualHandle::date);
+		return route(GET("/time"),request->actualHandle.time(request)).andRoute(GET("/date"), actualHandle::date).andRoute(GET("/times"), actualHandle::times);
 	}
 	
 	
